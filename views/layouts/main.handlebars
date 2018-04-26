@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Eat da Burger!</title>
+
+    
+    <link rel="icon" href="assets/img/mcdowells.jpg">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="assets/css/burger_style.css">
+
+  </head>
+
+  <body>
+
+    
+    <div class="container-fluid">
+    <center>
+      <div class="row">
+      <img src="assets/img/mcdowells.jpg" alt="Burger Img">
+    <div class="jumbotron">
+    <h1>McDowell's!</h1>      
+    <p>Choose a Burger from the list. Then eat it. <br> 
+    They have the Big Mac, we have the Big Mic. Create a Burger of your choice and add it to the list using the form below. The list on the left keeps track of what you've eaten.</p>    
+
+    
+        
+    </center>
+    
+
+      <br>
+      
+
+      
+      {{{body}}}
+
+
+      <br><br>
+
+      
+      <form action="burger/create" method="POST"> 
+        
+        
+        <div class="row">
+          
+          <div class="col-md-3"></div> 
+
+          
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="submitFont">Create a new burger!</label></center>
+            <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required value="" name="burger_name"></textarea>
+          </div>
+         
+          <div class="col-md-3"></div> 
+        </div>
+      
+        <!-- Submit Button -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Make my Burger!</button>
+        </center>
+      </form>
+      <br>
+    </div>
+  </body>
+</html> 
